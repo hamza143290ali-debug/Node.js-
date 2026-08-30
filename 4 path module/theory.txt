@@ -1,0 +1,109 @@
+# Node.js `path` Module
+
+### `basename()`
+
+Path ka **last part** return karta hai.
+
+Example:
+
+```js
+path.basename("C://Users/Desktop/coding/js/index.js")
+```
+
+Output:
+
+```text
+index.js
+```
+
+*********************************************************
+
+### `extname()`
+
+File ka **extension** return karta hai.
+
+Example:
+
+```js
+path.extname("C://Users/Desktop/coding/js/index.js")
+```
+
+Output:
+
+```text
+.js
+****************************************************************
+
+### `__filename`
+
+Current file ka **complete absolute path** return karta hai.
+
+Example:
+
+```text
+C:\Users\Desktop\coding\js\index.js
+```
+
+********************************************************************
+
+### `__dirname`
+
+Current file ke **folder ka complete absolute path** return karta hai.
+
+Example:
+
+```text
+C:\Users\Desktop\coding\js
+```
+*********************************************************************
+
+### `join()`
+
+Multiple path parts ko **join karke ek path** banata hai.
+
+Example:
+
+```js
+path.join("users", "hamza", "file.txt")
+```
+
+Output:
+
+```text
+users\hamza\file.txt
+```
+
+***************************************************************
+### `resolve()`
+
+Multiple path parts ko **join karke absolute path** banata hai.
+
+Example:
+
+```js
+path.resolve("users", "hamza", "file.txt")
+```
+
+Output:
+
+```text
+C:\current-folder\users\hamza\file.txt
+```
+
+*********************************************************************
+
+### `normalize()`
+
+Path mein jo unnecessary parts ya separators hain unko **correct/normalize** karta hai.
+
+Example:
+
+```js
+path.normalize("users//hamza/../file.txt")
+```
+
+Output:
+
+```text
+users\file.txt
+```
