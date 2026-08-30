@@ -1,0 +1,12 @@
+{
+  "name": "practise-of-node",
+  "version": "1.0.0",
+  "description": "practise of node.js",
+  "license": "ISC",
+  "author": "Hamza Ali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
