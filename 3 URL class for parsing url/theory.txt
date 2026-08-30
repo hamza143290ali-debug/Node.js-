@@ -1,0 +1,6 @@
+URL class: 
+first of all req.url maye hame srip path+queary parameters melte hain na ke pora url
+
+so URL class ke through ham req maye jo url melta hian osko parse karte hain and then
+os ke har aek property ko access kar sakte hain 
+
