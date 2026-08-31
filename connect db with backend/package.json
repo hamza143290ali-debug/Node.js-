@@ -1,0 +1,16 @@
+{
+  "name": "connect-db-with-backend",
+  "version": "1.0.0",
+  "description": "connect db with backend and perfrom some crud operations",
+  "license": "ISC",
+  "author": "Hamza Ali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.9.4"
+  }
+}
