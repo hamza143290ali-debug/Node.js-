@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+</head>
+
+<body>
+
+    <h1>URL Shortener</h1>
+
+    <form method="POST" action="/create">
+
+        <input
+            type="text"
+            name="url"
+            placeholder="https://example.com"
+        >
+
+        <button type="submit">
+            Generate
+        </button>
+
+    </form>
+
+    <% if (typeof shortID !== "undefined") { %>
+
+        <h3>Your Short URL:</h3>
+
+        <a href="/<%= shortID %>">
+            http://localhost:8005/<%= shortID %>
+        </a>
+
+    <% } %>
+
+</body>
+
+</html>

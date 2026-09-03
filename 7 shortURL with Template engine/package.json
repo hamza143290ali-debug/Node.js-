@@ -1,0 +1,18 @@
+{
+  "name": "7-shorturl-with-template-engine",
+  "version": "1.0.0",
+  "description": "server side rendering with EJS and shorturl",
+  "license": "ISC",
+  "author": "Hamza ali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.4",
+    "nanoid": "^6.0.1"
+  }
+}
