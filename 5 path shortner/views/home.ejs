@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+
+    <div>
+<form method="post" action="/url/create">
+     <label >
+        <input type="text"  name="url" placeholder="https://example.com">
+     </label>
+
+     <button type="submit">Generate</button>
+
+</form>
+
+<% if (typeof redirectUrl !== "undefined") { %>
+    <h3>Your Short URL:</h3>
+    <a href="<%= redirectUrl %>">
+        <%= redirectUrl %>
+    </a>
+<% } %>
+
+    </div>
+   
+
+ 
+    
+</body>
+</html>
