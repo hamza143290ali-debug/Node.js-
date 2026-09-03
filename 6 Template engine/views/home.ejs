@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <!-- simple static value -->
+   <h1>Welcome to the Home Page</h1>
+   <!-- name  -->
+   <h2> my name is: <%= name %></h2>
+
+   <!-- object values -->
+   <h3>Age: <%= detail.age %></h3>
+   <h3>City: <%= detail.city %></h3>
+   <h3>Education: <%= detail.education %></h3>
+
+   <!-- arrary values -->
+   <h3>Hobbies:</h3>
+   <% detail.hobbies.forEach((item)=>{ %>
+     
+    <ul>
+        <li><%= item %></li>
+    </ul>
+
+ <%})%>
+</body>
+</html>
