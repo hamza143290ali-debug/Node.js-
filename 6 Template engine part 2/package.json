@@ -1,0 +1,16 @@
+{
+  "name": "6-template-engine-part-2",
+  "version": "1.0.0",
+  "description": "Template engine ejs ",
+  "license": "ISC",
+  "author": "Hamza ali",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}

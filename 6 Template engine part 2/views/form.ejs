@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+ <div class="container flex justify-center h-screen items-center flex-col">
+    <form class="bg-blue-400 rounded-2xl p-4 text-3xl flex flex-col " action="/form" method="POST" >
+        <label for="name">Name:</label>
+        <input type="text" name="myname"/>
+
+        <input class="bg-yellow-300 rounded-xl" type="submit">
+
+    </form>
+
+     <div class="bg-blue-400 text-white mt-4 p-3">
+
+        <%= message %>
+     </div>
+ </div>  
+    
+</body>
+</html>
