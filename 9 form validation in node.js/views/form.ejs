@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+</head>
+
+<body>
+
+    <div>
+
+        <form action="/register" method="post">
+
+            <!-- Name -->
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="username" id="name">
+
+                <% const usernameError = errors.find(error => error.path === "username"); %>
+
+                <% if (usernameError) { %>
+                    <p><%= usernameError.msg %></p>
+                <% } %>
+            </div>
+
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="useremail" id="email">
+
+                <% const emailError = errors.find(error => error.path === "useremail"); %>
+
+                <% if (emailError) { %>
+                    <p><%= emailError.msg %></p>
+                <% } %>
+            </div>
+
+
+            <!-- Password -->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="userpassword" id="password">
+
+                <% const passwordError = errors.find(error => error.path === "userpassword"); %>
+
+                <% if (passwordError) { %>
+                    <p><%= passwordError.msg %></p>
+                <% } %>
+            </div>
+
+
+            <!-- City -->
+            <div>
+                <label for="city1">Mingora</label>
+                <input type="radio" name="city" value="Mingora" id="city1">
+
+                <label for="city2">Kanju</label>
+                <input type="radio" name="city" value="Kanju" id="city2">
+
+                <label for="city3">Koza Bandai</label>
+                <input type="radio" name="city" value="Koza Bandai" id="city3">
+
+                <% const cityError = errors.find(error => error.path === "city"); %>
+
+                <% if (cityError) { %>
+                    <p><%= cityError.msg %></p>
+                <% } %>
+            </div>
+
+
+            <!-- Submit -->
+            <div>
+                <input type="submit" value="Register">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

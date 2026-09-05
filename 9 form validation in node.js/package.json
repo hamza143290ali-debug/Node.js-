@@ -1,0 +1,17 @@
+{
+  "name": "9-form-validation-in-node",
+  "version": "1.0.0",
+  "description": "form validation in node.js",
+  "license": "ISC",
+  "author": "Hamza Ali",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2"
+  }
+}
