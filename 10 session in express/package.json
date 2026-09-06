@@ -1,0 +1,18 @@
+{
+  "name": "10-session-in-express",
+  "version": "1.0.0",
+  "description": "How to save data temproraily in server",
+  "license": "ISC",
+  "author": "Hamza Ali",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "connect-mongo": "^6.0.0",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0"
+  }
+}
