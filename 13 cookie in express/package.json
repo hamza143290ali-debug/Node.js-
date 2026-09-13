@@ -1,0 +1,16 @@
+{
+  "name": "13-cookie-in-express",
+  "version": "1.0.0",
+  "description": "cookie in express.js",
+  "license": "ISC",
+  "author": "Hamza Ali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1"
+  }
+}
